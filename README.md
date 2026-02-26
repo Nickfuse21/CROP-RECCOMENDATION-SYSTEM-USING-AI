@@ -1,14 +1,20 @@
-# Crop Recommendation System using AI
+# Crop Recommendation System using Machine Learning
 
-This project presents an AI-powered Crop Recommendation System designed to suggest the most suitable crop based on soil characteristics and environmental conditions. The system leverages machine learning techniques to assist farmers and agricultural planners in making data-driven decisions that improve productivity, reduce risk, and promote sustainable farming practices.
+This project is a Machine Learning-based Crop Recommendation System that suggests the most suitable crop based on soil nutrients and environmental conditions. The goal is to help in making data-driven agricultural decisions and reduce the risk of crop failure.
 
 ---
 
-## Project Overview
+## Overview
 
-Agriculture today faces significant challenges including climate variability, soil degradation, and inefficient resource utilization. Selecting the wrong crop for given soil and weather conditions can result in poor yield and financial loss.
+Agriculture is highly dependent on soil quality and weather conditions. Choosing an unsuitable crop for a particular soil type can lead to low yield and financial loss.
 
-This system addresses that problem by analyzing key soil and climate parameters such as:
+This system analyzes soil and climate parameters and predicts the most appropriate crop using machine learning models trained on historical data.
+
+---
+
+## Input Features
+
+The model uses the following parameters:
 
 - Nitrogen (N)
 - Phosphorus (P)
@@ -18,47 +24,63 @@ This system addresses that problem by analyzing key soil and climate parameters 
 - Rainfall
 - Soil pH
 
-Using these inputs, a trained machine learning model predicts the most suitable crop for cultivation under the given conditions.
+These factors directly influence crop growth and productivity.
 
 ---
 
-## System Workflow
+## Workflow
 
-1. Soil nutrient and environmental parameters are provided as input.
-2. The input data is cleaned and preprocessed.
-3. Features are normalized where required.
-4. A trained classification model processes the input.
-5. The system outputs the most appropriate crop recommendation.
-
----
-
-## Key Features
-
-- Intelligent crop recommendations based on soil and climate data  
-- Machine learning-based classification models  
-- Data-driven agricultural decision-making  
-- Reduced crop failure risk  
-- Scalable for integration into web or mobile platforms  
+1. Load and explore the dataset.
+2. Perform data cleaning and preprocessing.
+3. Apply feature scaling where required.
+4. Train classification models.
+5. Evaluate model performance.
+6. Predict the most suitable crop for given input values.
 
 ---
 
-## Technology Stack
+## Machine Learning Models Used
+
+- Random Forest Classifier
+- Decision Tree Classifier
+- Support Vector Machine (SVM)
+
+Random Forest showed better overall performance compared to other models.
+
+---
+
+## Tech Stack
 
 **Programming Language**
 - Python
 
 **Libraries**
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Matplotlib  
-- Seaborn  
-
-**Models Used**
-- Random Forest  
-- Decision Tree  
-- Support Vector Machine  
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
 
 ---
 
-## Project Structure
+## Key Features
+
+- Machine learning-based crop prediction
+- Comparison of multiple classification models
+- Data preprocessing and feature scaling
+- Easy to extend for deployment
+
+---
+
+## Future Improvements
+
+- Deploy as a web application
+- Integrate real-time weather data
+- Add fertilizer recommendation module
+- Improve accuracy with hyperparameter tuning
+
+---
+
+## Conclusion
+
+This project demonstrates how machine learning can be applied in agriculture to support better crop selection decisions based on soil and environmental data.
